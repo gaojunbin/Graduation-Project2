@@ -1,0 +1,14 @@
+common:
+
+    logs_path: './logs'
+    checkpoint_path: './checkpoint'
+    dataset_dir: './Datasets/'
+    num_classes: 2
+    input_width: 224     #二维图像宽度
+    input_height: 224    #二维图形高度
+    IsTrain: True        #训练or测试
+    CrossValidation_pro: 0.3   #交叉验证比例
+    input_width: 224
+    input_height: 224
+    BATCH_SIZE: 5
+
