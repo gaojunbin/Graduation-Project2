@@ -20,10 +20,19 @@
 
 ## Usage: Training（使用训练）
 
+If you're running for the first time（如果您是第一次运行）：
+
 ```shell
-sh clear.sh
 sh train.sh
 ```
+
+If you need to clear the cache（如果您需要清除训练后缓存文件）:
+
+```shell
+sh clear.sh
+```
+
+
 
 ## Usage: Adjusting Parameter（参数修改）
 
