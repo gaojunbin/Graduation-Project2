@@ -37,6 +37,11 @@ class PointCloud():
             self.dataset_dir       = dataset_dir
 
     def adjust_dataset(self,train_data, train_label, test_data, test_label):
+        '''
+        @ note: 打乱数据集
+        @ para: "数据集"
+        @ para: "打乱后的数据集"
+        '''
         train_num = len(train_label)
         test_num = len(test_label)
         train_seq_distruption = [i for i in range(0, train_num)]
@@ -140,7 +145,7 @@ class PointCloud():
                         lable[i] = 1.0
                         lable = lable.tolist()
                         ValLable.append(lable)
-                print("第",i+1,"类，训练集数量:",Train_DataNum,"验证集数量:",CrossValidation_DataNum)
+                print("第",i+1,"类，训练集数量:",Train_DataNum,"交叉验证集数量:",CrossValidation_DataNum)
             else:
                 for j in range(0,DataNum):
                     assert os.path.exists(data_dir+datafiles[j]),"\n**Loading Datasets error,please check**\n" 
